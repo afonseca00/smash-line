@@ -12,7 +12,7 @@ const Hero = () => {
       >
         <div className="text-center p-4 bg-black bg-opacity-50 rounded-lg">
           <h1 className="text-4xl sm:text-6xl font-bold mb-4">Bem-vindo ao Smash Line!</h1>
-          <p className="text-lg sm:text-xl mb-4">Os melhores Smash Burgers de Portugal</p>
+          <p className="text-lg sm:text-xl mb-4">Os melhores Smash Burgers da Linha</p>
           <button
             onClick={scrollToMenu}
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg"
