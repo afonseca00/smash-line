@@ -30,10 +30,6 @@ const Menus = () => {
     },
   ];
 
-  const handleSelectMenu = (menu) => {
-    setSelectedMenu(menu);
-  };
-
   const handleCloseModal = () => {
     setSelectedMenu(null);
   };
@@ -55,12 +51,6 @@ const Menus = () => {
             <h3 className="text-xl font-semibold">{menu.name}</h3>
             <p className="text-gray-600">{menu.description}</p>
             <p className="text-green-600 font-bold">{menu.price}</p>
-            <button
-              onClick={() => handleSelectMenu(menu)}
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Escolher
-            </button>
           </div>
         ))}
       </div>

@@ -22,11 +22,6 @@ const Fries = () => {
     },
   ];
 
-  const handleAddToCart = (item) => {
-    console.log("Adicionado ao carrinho:", item);
-    alert(`${item.name} foi adicionado ao carrinho!`);
-  };
-
   return (
     <div className="p-4">
       <h2 className="text-2xl font-bold mb-4">Batatas</h2>
@@ -41,12 +36,6 @@ const Fries = () => {
             <h3 className="text-xl font-semibold">{item.name}</h3>
             <p className="text-gray-600">{item.description}</p>
             <p className="text-green-600 font-bold">{item.price}</p>
-            <button
-              onClick={() => handleAddToCart(item)}
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Adicionar ao Carrinho
-            </button>
           </div>
         ))}
       </div>
